@@ -1,16 +1,21 @@
-This is a Kotlin Multiplatform project targeting Android, iOS.
+# Kotlin Multiplatform Project - Tareas Colaborativas & Notificaciones (Firebase + RTDB)
 
-* [/iosApp](./iosApp/iosApp) contains an iOS application. Even if you’re sharing your UI with Compose Multiplatform,
-  you need this entry point for your iOS app. This is also where you should add SwiftUI code for your project.
+This is a Kotlin Multiplatform project targeting Android and iOS, implementing collaborative tasks with Firestore, Realtime Database counters, and local notifications using NotificationManager.
 
-* [/shared](./shared/src) is for code that will be shared across your Compose Multiplatform applications.
-  It contains several subfolders:
+## Integrantes del Grupo
+- Brayan Sejas Espinoza
+- Jose Alejandro Terrazas Antezana
+- Rafael Alejandro Quisbert Paco
+- Jorge Pablo Ayaviri Hinojosa
+- Jonathan Luizaga Zapata
+
+## Estructura del Proyecto
+
+* [/androidApp](./androidApp) contains the Android application.
+* [/shared](./shared/src) is for code that’s shared across your Compose Multiplatform applications.
   - [commonMain](./shared/src/commonMain/kotlin) is for code that’s common for all targets.
-  - Other folders are for Kotlin code that will be compiled for only the platform indicated in the folder name.
-    For example, if you want to use Apple’s CoreCrypto for the iOS part of your Kotlin app,
-    the [iosMain](./shared/src/iosMain/kotlin) folder would be the right place for such calls.
-    Similarly, if you want to edit the Desktop (JVM) specific part, the [jvmMain](./shared/src/jvmMain/kotlin)
-    folder is the appropriate location.
+  - [androidMain](./shared/src/androidMain/kotlin) contains Android-specific implementations (e.g. AndroidNotificationService).
+  - [iosMain](./shared/src/iosMain/kotlin) contains iOS-specific implementations.
 
 ### Running the apps
 
