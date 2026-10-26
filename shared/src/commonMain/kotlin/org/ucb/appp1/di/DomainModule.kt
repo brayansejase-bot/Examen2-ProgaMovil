@@ -2,12 +2,16 @@ package org.ucb.appp1.di
 
 import org.koin.core.module.dsl.singleOf
 import org.koin.dsl.module
-import org.ucb.appp1.exchange.domain.usecase.ObserveExchangeUseCase
-import org.ucb.appp1.signin.domain.usecase.AuthenticateUseCase
-import org.ucb.appp1.userinformation.domain.usecase.FindAliasUseCase
+import org.ucb.appp1.tasks.domain.usecase.AddTaskUseCase
+import org.ucb.appp1.tasks.domain.usecase.DeleteTaskUseCase
+import org.ucb.appp1.tasks.domain.usecase.ObserveCompletedCountUseCase
+import org.ucb.appp1.tasks.domain.usecase.ObserveTasksUseCase
+import org.ucb.appp1.tasks.domain.usecase.ToggleTaskUseCase
 
 val domainModule = module {
-    singleOf(::AuthenticateUseCase)
-    singleOf(::FindAliasUseCase)
-    singleOf(::ObserveExchangeUseCase)
+    singleOf(::ObserveTasksUseCase)
+    singleOf(::ObserveCompletedCountUseCase)
+    singleOf(::ToggleTaskUseCase)
+    singleOf(::AddTaskUseCase)
+    singleOf(::DeleteTaskUseCase)
 }

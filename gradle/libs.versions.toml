@@ -21,7 +21,7 @@ ksp = "2.3.6"
 room3 = "3.1.0-alpha01"
 sqlite = "2.7.1"
 googleServices = "4.4.2" # O la última versión estable
-
+firebaseFirestore = "2.7.0"
 
 [libraries]
 firebase-database = { module = "dev.gitlive:firebase-database", version.ref = "firebaseDatabase" }
@@ -59,6 +59,7 @@ androidx-room3-compiler = { module = "androidx.room3:room3-compiler", version.re
 # Optional SQLite Wrapper
 androidx-room3-sqlite-wrapper = { module = "androidx.room3:room3-sqlite-wrapper", version.ref = "room3" }
 
+firebase-firestore = { module = "dev.gitlive:firebase-firestore", version.ref = "firebaseFirestore" }
 
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "agp" }

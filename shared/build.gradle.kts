@@ -84,6 +84,8 @@ kotlin {
             implementation(libs.androidx.room3.sqlite.wrapper)
         }
         commonMain.dependencies {
+            implementation(libs.firebase.database)
+            implementation(libs.firebase.firestore)
             implementation(libs.compose.runtime)
             implementation(libs.compose.foundation)
             implementation(libs.compose.material3)

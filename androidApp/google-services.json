@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "148310803319",
+    "project_id": "pablostify-6ed2a",
+    "storage_bucket": "pablostify-6ed2a.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:148310803319:android:d0c9ef1b84fd35bfc21772",
+        "android_client_info": {
+          "package_name": "org.ucb.appp1"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAFj8pdk7RgPuPFiVETYhb2oC4bKO9yEoY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

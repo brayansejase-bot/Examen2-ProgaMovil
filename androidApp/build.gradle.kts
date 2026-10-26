@@ -4,6 +4,8 @@ plugins {
     alias(libs.plugins.androidApplication)
     alias(libs.plugins.composeCompiler)
     alias(libs.plugins.googleServices)
+    //id("com.android.application")
+    //id("com.google.gms.google-services")
 }
 
 kotlin {
@@ -18,6 +20,8 @@ dependencies {
 
     implementation(libs.compose.uiToolingPreview)
     debugImplementation(libs.compose.uiTooling)
+    implementation(platform("com.google.firebase:firebase-bom:35.1.0"))
+    implementation("com.google.firebase:firebase-analytics")
 }
 
 android {
